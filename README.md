@@ -18,7 +18,27 @@ Un template básico para iniciar proyectos colaborativos de desarrollo. Este tem
 ├── CODE_OF_CONDUCT.md                 # Código de conducta para la comunidad
 ├── /docs                               # Documentación extendida del proyecto
 ├── /backend                            # Código del backend
+│   ├── /src                            # Código fuente del backend
+│   │   ├── /controllers               # Controladores de la API
+│   │   ├── /models                    # Modelos de base de datos
+│   │   ├── /routes                    # Rutas de la API
+│   │   └── /services                  # Servicios y lógica de negocio
+│   ├── /config                        # Configuración del backend
+│   │   ├── database.js                # Configuración de la base de datos
+│   │   └── server.js                  # Configuración del servidor
+│   ├── /test                          # Pruebas del backend
+│   ├── package.json                   # Dependencias             y scripts del backend
+│   └── .env                           # Variables de entorno para el backend
 ├── /frontend                           # Código del frontend
+│   ├── /public                         # Archivos públicos (imágenes, favicon, etc.)
+│   ├── /src                            # Código fuente del frontend
+│   │   ├── /components                # Componentes reutilizables
+│   │   ├── /pages                     # Páginas de la aplicación
+│   │   ├── /hooks                     # Custom hooks de React
+│   │   └── /assets                    # Archivos estáticos (fuentes, imágenes)
+│   ├── /test                           # Pruebas del frontend
+│   ├── package.json                    # Dependencias y scripts del frontend
+│   └── .env                            # Variables de entorno para el frontend
 ├── /scripts                            # Scripts adicionales (por ejemplo, de despliegue)
 ├── .github/
 │   ├── workflows/                     # Flujos de trabajo automatizados (CI/CD)
